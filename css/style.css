@@ -1,43 +1,16 @@
-body,
 html {
-    background-image: url("/img/ticks.png");
-}
-
-html {
-    /*    overflow: hidden;  */
-/*    background: url(/texture.jpg) no-repeat left top fixed;*/
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    border: none;
-
-    position: absolute;
-    top: expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight: document.body.clientHeight)+(ignoreMe=document.documentElement.scrollTop ? document.documentElement.scrollTop: document.body.scrollTop))+'px');
-
+    background: url("/img/ticks.png") repeat fixed;
 }
 
 body {
-    margin: 0;
+/*    margin: 0;*/
 }
-
-#footer {
-    position: fixed;
-/*    left: 0px;*/
-    bottom: 100px;
-    height: 35vh;
-/*    width: 100%;*/
-    opacity: 0.5;
-    
-}
-
-
 
 a {
     color: black;
     font-weight: 600;
     text-decoration: none;
-    padding: 4px
+    padding: 4px;
 }
 
 a:hover {
@@ -51,18 +24,15 @@ a:hover {
 
 .sidebar {
     width: 250px;
-/*    height: 100vh;*/
+    height: 100vh;
     position:fixed;
-    z-index: 1;
 }
-
 
 .mdl-tabs__panel {
     margin-bottom: 80px;
     width: 100%;
     padding: 40px;
     margin-left:250px;
-
 }
 
 .mdl-tabs__panel h6{
@@ -71,7 +41,7 @@ a:hover {
 
 .mdl-tabs__panel h5{
     padding:0px 0 20px 0;
-/*    text-transform: capitalize;*/
+    text-transform: uppercase;
 }
 
 .leftpadbox{
@@ -83,24 +53,12 @@ a:hover {
     font-size: 18pt;
     line-height: 36px;
     letter-spacing: 4px;
-/*    font-weight: 300;*/
-/*    color: dimgray;*/
-
-}
-
-
-
-.embed-vimeo  {
-
-    text-align: left !important;
 }
 
 .subtitle {
     padding: 20px 0 30px 30px;
     font-size: 12pt;
     letter-spacing: 2px;
-/*    font-weight: 300;*/
-/*    color: dimgray;*/
     width: 220px;
     border-bottom: 1px solid rgba(10, 11, 49, 0.20);
     margin-bottom: 30px;
@@ -117,25 +75,19 @@ a:hover {
 
 }
 
-
 .vertical-mdl-tabs .mdl-tabs__tab {
     width: 100%;
     height: 46px;
     font-size: 10pt;
     box-sizing: border-box;
     letter-spacing: 2px;
-/*    color: dimgray;*/
-        font-weight: 3;
+    font-weight: 3;
     color:black;
-/*    font-weight:600;*/
-
-/*    font-weight: lighter;*/
 }
 
 .vertical-mdl-tabs .mdl-tabs__tab_portfolio {
     width: 100%;
     height: 46px;
-/*    line-height: 40px;*/
     box-sizing: border-box;
     letter-spacing: 2px;
     font-size: 10pt;
@@ -163,22 +115,22 @@ a:hover {
     color: green;
 }
 
-.mdl-mini-footer {
-    bottom: 0;
-    padding: 6px 30px;
-    width: 100%;
-    position: fixed;
-}
-
-.mdl-mini-footer a:hover {
-    background: none;
-}
-
-.fab {
-    margin-right: 10px;
+.iconrow a:hover{
     background:none;
 }
 
+.fab {
+    padding: 10px;
+ }
+
 .fab:hover {
     color: green;
+}
+
+#footer {
+    position: fixed;
+    bottom: 100px;
+    height: 35vh;
+    opacity: 0.5;
+    z-index:-1;
 }
