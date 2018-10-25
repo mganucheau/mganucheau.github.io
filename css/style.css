@@ -30,6 +30,7 @@ body {
     box-shadow: none;
     border-right: 1px solid rgba(10, 11, 49, 0.20);
     border-bottom: 1px solid rgba(10, 11, 49, 0.20);
+    height:auto;
 }
 
 .drawer {
@@ -44,6 +45,8 @@ body {
 .mdl-navigation {
     border-right: 1px solid rgba(10, 11, 49, 0.20);
     background: url("/img/ticks.png") repeat fixed;
+    padding-left:10px;
+    padding-bottom:30px;
 }
 
 
@@ -105,8 +108,10 @@ body {
 }
 
 .navlist {
-    padding-left: 20px;
-    padding-bottom: 30px;
+/*
+    padding-left: 0px;
+    padding-bottom: 80px;
+*/
     background: none;
 }
 
