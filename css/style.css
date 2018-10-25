@@ -154,21 +154,15 @@ body {
     background: none;
 }
 
-.fab {
+.fab, .fas {
     padding: 0 10px;
+/*    color:gray;*/
 }
 
-.fab:hover {
+.fab:hover, .fas:hover{
     color: green;
 }
 
-.fas {
-    padding: 0 10px;
-}
-
-.fas:hover {
-    color: green;
-}
 
 #footer {
     position: fixed;
