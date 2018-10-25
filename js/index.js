@@ -1,0 +1,30 @@
+    $(document).ready(function () {
+        $("#about").click(function(){
+            $("#include").load("/include/about.html"); 
+        });
+        
+        $("#fmf").click(function(){
+            $("#include").load("/include/fmf.html"); 
+        });
+        $("#clickclean").click(function(){
+            $("#include").load("/include/clickclean.html"); 
+        });
+        
+        $("#pe3").click(function(){
+            $("#include").load("/include/pe3.html"); 
+        });
+
+        $("#cv").click(function(){
+            $("#include").load("/include/cv.html"); 
+        });
+                    
+        $("#resume").click(function(){
+            $("#include").load("/include/resume.html"); 
+        });
+
+        $("#seeingsound").click(function(){
+            $("#include").load("/include/seeingsound.html"); 
+        });
+                    
+        
+    });

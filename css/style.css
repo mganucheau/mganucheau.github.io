@@ -1,118 +1,195 @@
-html {
-    background: url("/img/ticks.png") repeat fixed;
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+html,
+body {
+    font-family: 'Roboto', 'Helvetica', sans-serif;
 }
 
 body {
-/*    margin: 0;*/
+    background: url("/img/ticks.png") repeat fixed;
 }
 
-a {
-    color: black;
+.mdl-layout__header {
+    background: none;
+    border: none;
+    box-shadow: none;
+
+    display: contents;
+}
+
+.drawer {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    background:transparent;
+}
+
+.mdl-navigation {
+    border-right: 1px solid rgba(10, 11, 49, 0.20);
+        background: url("/img/ticks.png") repeat fixed;
+}
+
+
+.drawer a {
+    line-height: 8pt;
+}
+
+.content a{
+      color: black;
     font-weight: 600;
     text-decoration: none;
     padding: 4px;
 }
 
-a:hover {
-    background-color: rgba(0, 128, 0, 0.20);
+.content a:hover{
+    background: lightgreen;
+}
+
+/* iOS Safari specific workaround */
+.drawer .mdl-menu__container {
+    z-index: -1;
+}
+
+.drawer .navigation {
+    z-index: -2;
+}
+
+/* END iOS Safari specific workaround */
+.drawer .mdl-menu .mdl-menu__item {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    
+}
+
+.drawer h4{
+        padding:0 30px;
+        letter-spacing: 4px;
+
+}
+
+
+.drawer h6 {
+/*    margin: 10px 40px;*/
+        letter-spacing: 2px;
+    padding:0 30px;
+    margin: 0 0 20px 0;
+
+}
+
+.navlist{
+    padding-left:20px;
+    padding-bottom:30px;
+}
+
+
+
+.drawer li {
+    list-style-type: none;
+}
+
+.topcard {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(10, 11, 49, 0.20);
+
+
+
+}
+
+.navigation {
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.mdl-navigation__link:hover{
+    background: rgba(0,255,0,0.2);
+}
+
+.layout .navigation .mdl-navigation__link {
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.56);
+    font-weight: 500;
+    
+}
+
+
+/*
+
+.layout .navigation .mdl-navigation__link:hover {
+    background-color: #00BCD4;
+    color: #37474F;
+    
+}
+*/
+/*
+
+a:active{
+        border-right: 3px solid green;
+
+}
+
+a:hover{
+        border-right: 3px solid green;
+    opacity:inherit;
+
+}
+*/
+
+.mdl-navigation__link-current{
+    background-color:green;
+    font-size:54px;
+    
+}
+
+.navigation .mdl-navigation__link .material-icons {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.56);
+    margin-right: 32px;
 }
 
 .image {
+    height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit:cover;
 }
 
-.sidebar {
-    width: 250px;
-    height: 100vh;
-    position:fixed;
-}
-
-.mdl-tabs__panel {
-    margin-bottom: 80px;
-    width: 100%;
-    padding: 40px;
-    margin-left:250px;
-}
-
-.mdl-tabs__panel h6{
-    margin:10px 0; 
-}
-
-.mdl-tabs__panel h5{
-    padding:0px 0 20px 0;
-    text-transform: uppercase;
+.content {
+/*    max-width: 1080px;*/
+    padding: 0px 40px;
+    margin-bottom:100px;
+    /*    padding:0;*/
 }
 
 .leftpadbox{
     padding:10px 0px 10px 40px; 
-}
-
-.title {
-    padding: 40px 0 0 30px;
-    font-size: 18pt;
-    line-height: 36px;
-    letter-spacing: 4px;
-}
-
-.subtitle {
-    padding: 20px 0 30px 30px;
-    font-size: 12pt;
-    letter-spacing: 2px;
-    width: 220px;
-    border-bottom: 1px solid rgba(10, 11, 49, 0.20);
-    margin-bottom: 30px;
-
-}
-
-.vertical-mdl-tabs .mdl-tabs__tab-bar {
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    height: inherit;
-    border-bottom: none;
-    border-right: 1px solid rgba(10, 11, 49, 0.20);
-
-}
-
-.vertical-mdl-tabs .mdl-tabs__tab {
-    width: 100%;
-    height: 46px;
-    font-size: 10pt;
-    box-sizing: border-box;
-    letter-spacing: 2px;
-    font-weight: 3;
-    color:black;
-}
-
-.vertical-mdl-tabs .mdl-tabs__tab_portfolio {
-    width: 100%;
-    height: 46px;
-    box-sizing: border-box;
-    letter-spacing: 2px;
-    font-size: 10pt;
-    padding: 30px 0px 30px 30px;
-    color: black;
-    font-weight: 400;
-    background: none;
-}
-
-.vertical-mdl-tabs.mdl-tabs.is-upgraded a.mdl-tabs__tab.is-active {
-    border-right: 3px solid green;
-}
-
-.vertical-mdl-tabs.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after {
-    content: inherit;
-    height: 0;
-}
-
-.vertical-mdl-tabs.mdl-tabs .mdl-tabs__tab {
-    text-align: left;
-    padding-left: 30px;
-}
-
-.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active {
-    color: green;
 }
 
 .iconrow a:hover{
@@ -127,10 +204,21 @@ a:hover {
     color: green;
 }
 
+.fas {
+    padding: 10px;
+ }
+
+.fas:hover {
+    color: green;
+}
+
+
+
+
 #footer {
     position: fixed;
     bottom: 100px;
     height: 35vh;
-    opacity: 0.5;
+    opacity: 0.4;
     z-index:-1;
 }
