@@ -28,8 +28,8 @@ body {
     border: none;
     display: contents;
     box-shadow: none;
+    border-right: 1px solid rgba(10, 11, 49, 0.20);
     border-bottom: 1px solid rgba(10, 11, 49, 0.20);
-
 }
 
 .drawer {
@@ -42,11 +42,17 @@ body {
 }
 
 .mdl-navigation {
-    border-bottom: 1px solid rgba(10, 11, 49, 0.20);
-
     border-right: 1px solid rgba(10, 11, 49, 0.20);
     background: url("/img/ticks.png") repeat fixed;
+}
 
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
+    background: rgba(0, 128, 0, 0.20);
+}
+
+.is-active {
+    border-right: 3px solid rgb(0,128,0);;
 
 }
 
@@ -54,19 +60,15 @@ body {
     line-height: 8pt;
 }
 
-.drawer a:hover {
-    background: lightgreen;
-}
-
 .content a {
     color: black;
     font-weight: 600;
     text-decoration: none;
-    padding: 4px;
+    padding: 6px;
 }
 
 .content a:hover {
-    background: lightgreen;
+    background:rgba(0,128,0,0.20);
 }
 
 /* iOS Safari specific workaround */
@@ -76,9 +78,12 @@ body {
 
 .drawer .navigation {
     z-index: -2;
+
 }
 
 /* END iOS Safari specific workaround */
+
+
 .drawer .mdl-menu .mdl-menu__item {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -86,7 +91,6 @@ body {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-
 }
 
 .drawer h4 {
@@ -94,30 +98,27 @@ body {
     letter-spacing: 4px;
 }
 
-
 .drawer h6 {
-    /*    margin: 10px 40px;*/
     letter-spacing: 2px;
     padding: 0 30px;
-    margin: 0 0 20px 0;
-
+    margin: 0 0 0px 0;
 }
 
 .navlist {
     padding-left: 20px;
     padding-bottom: 30px;
+    background: none;
 }
-
-
 
 .drawer li {
     list-style-type: none;
 }
 
 .topcard {
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+    padding: 10px 0 30px 0;
     border-bottom: 1px solid rgba(10, 11, 49, 0.20);
+    border-right: 1px solid rgba(10, 11, 49, 0.20);
+    background: url("/img/ticks.png") repeat fixed;
 }
 
 .navigation {
@@ -125,8 +126,6 @@ body {
     -ms-flex-positive: 1;
     flex-grow: 1;
 }
-
-
 
 .layout .navigation .mdl-navigation__link {
     display: -webkit-flex !important;
@@ -148,7 +147,6 @@ body {
 
 .content {
     padding: 20px;
-    /*    margin-bottom: 100px;*/
 }
 
 .leftpadbox {
@@ -162,14 +160,12 @@ body {
 .fab,
 .fas {
     padding: 0 10px;
-    /*    color:gray;*/
 }
 
 .fab:hover,
 .fas:hover {
-    color: green;
+    color:rgba(0,128,0);
 }
-
 
 #footer {
     position: fixed;

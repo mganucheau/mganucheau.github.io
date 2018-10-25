@@ -33,14 +33,11 @@ $(document).ready(function () {
         $("#include").load("/include/oraclear.html"); 
     });
 
+    $('li > a').click(function() {
+        $('li').removeClass();
+        $(this).parent().addClass('is-active');
+    });
+
 
 });
-//
-//$(window).bind('resize', function(e)
-//{
-//  if (window.RT) clearTimeout(window.RT);
-//  window.RT = setTimeout(function()
-//  {
-//    this.location.reload(false); /* false to get page from cache */
-//  }, 200);
-//});
+
