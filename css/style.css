@@ -25,20 +25,25 @@ body {
 
 .mdl-layout__header {
     background: none;
-    /*    border: none;*/
+    border: none;
     display: contents;
+    box-shadow: none;
+    border-bottom: 1px solid rgba(10, 11, 49, 0.20);
+
 }
 
 .drawer {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    /*    border: none;*/
+    border: none;
     background: none;
 
 }
 
 .mdl-navigation {
+    border-bottom: 1px solid rgba(10, 11, 49, 0.20);
+
     border-right: 1px solid rgba(10, 11, 49, 0.20);
     background: url("/img/ticks.png") repeat fixed;
 
@@ -143,7 +148,7 @@ body {
 
 .content {
     padding: 20px;
-    margin-bottom: 100px;
+    /*    margin-bottom: 100px;*/
 }
 
 .leftpadbox {
@@ -154,12 +159,14 @@ body {
     background: none;
 }
 
-.fab, .fas {
+.fab,
+.fas {
     padding: 0 10px;
-/*    color:gray;*/
+    /*    color:gray;*/
 }
 
-.fab:hover, .fas:hover{
+.fab:hover,
+.fas:hover {
     color: green;
 }
 
