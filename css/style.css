@@ -14,6 +14,16 @@
  * limitations under the License.
  */
 
+#view-source !important {
+    position: fixed;
+    display: block;
+    right: 0;
+    bottom: 0;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    z-index: 900;
+}
+
 html,
 body {
     font-family: 'Roboto', 'Helvetica', sans-serif;
@@ -25,13 +35,12 @@ body {
 
 .mdl-layout__header {
     background: none;
-    
     border: none;
     display: contents;
     box-shadow: none;
     border-right: 1px solid rgba(10, 11, 49, 0.20);
     border-bottom: 1px solid rgba(10, 11, 49, 0.20);
-/*    height:auto;*/
+    /*    height:auto;*/
 }
 
 .drawer {
@@ -40,18 +49,15 @@ body {
     box-shadow: none;
     border: none;
     background: none;
-    
-
 }
 
 .mdl-navigation {
     border-right: 1px solid rgba(10, 11, 49, 0.20);
     background: url("/img/ticks.png") repeat fixed;
-    padding-left:10px;
-    padding-bottom:30px;
-        background: url("/img/ticks.png") repeat;
-    height:auto;
-
+    padding-left: 10px;
+    padding-bottom: 30px;
+    background: url("/img/ticks.png") repeat;
+    height: auto;
 }
 
 
@@ -59,24 +65,32 @@ body {
     background: rgba(0, 128, 0, 0.20);
 }
 
-.is-active {
-    border-right: 3px solid rgb(0,128,0);;
+#portfolio.is-active {
+    border:none;
+}
 
+#portfolio:hover {
+    background: none;
+    cursor: default;
+}
+
+.is-active {
+    border-right: 3px solid rgb(0, 128, 0);
 }
 
 .drawer a {
-    line-height: 8pt;    
+    line-height: 8pt;
 }
 
 .content a {
     color: black;
     font-weight: 600;
     text-decoration: none;
-    padding: 6px;
+    padding: 4px;
 }
 
 .content a:hover {
-    background:rgba(0,128,0,0.20);
+    background: rgba(0, 128, 0, 0.20);
 }
 
 /* iOS Safari specific workaround */
@@ -86,7 +100,6 @@ body {
 
 .drawer .navigation {
     z-index: -2;
-
 }
 
 /* END iOS Safari specific workaround */
@@ -112,13 +125,8 @@ body {
     margin: 0 0 0px 0;
 }
 
-.navlist {
-    
-}
-
 .drawer li {
     list-style-type: none;
-    
 }
 
 .topcard {
@@ -154,6 +162,7 @@ body {
 
 .content {
     padding: 20px;
+    margin-bottom: 60px;
 }
 
 .leftpadbox {
@@ -166,18 +175,18 @@ body {
 
 .fab,
 .fas {
-    padding: 0 10px;
+    padding: 6px;
 }
 
 .fab:hover,
 .fas:hover {
-    color:rgba(0,128,0);
+    color: rgba(0, 128, 0);
 }
 
 #footer {
     position: fixed;
-    bottom: 100px;
+    bottom: 120px;
     height: 35vh;
-    opacity: 0.4;
+    opacity: 0.2;
     z-index: -1;
 }

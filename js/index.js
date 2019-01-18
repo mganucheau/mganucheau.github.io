@@ -1,43 +1,55 @@
 $(document).ready(function () {
-    $("#include").load("/include/about.html"); 
 
-    $("#about").click(function(){
-        $("#include").load("/include/about.html"); 
+//    $("#include").fadeIn("slow");
+
+      
+    
+    $("#about").click(function () {
+       $("#include").fadeOut(1); $("#include").load("/include/about.html").fadeIn(500);
     });
 
-    $("#fmf").click(function(){
-        $("#include").load("/include/fmf.html"); 
+    $("#fmf").click(function () {
+        $("#include").fadeOut(1); 
+        $("#include").load("/include/fmf.html").fadeIn(500);
     });
 
-    $("#clickclean").click(function(){
-        $("#include").load("/include/clickclean.html"); 
+    $("#clickclean").click(function () {
+        $("#include").fadeOut(1); 
+        $("#include").load("/include/clickclean.html").fadeIn(500);
     });
 
-    $("#pe3").click(function(){
-        $("#include").load("/include/pe3.html"); 
+    $("#pe3").click(function () {
+        $("#include").fadeOut(1); 
+        $("#include").load("/include/pe3.html").fadeIn(500);
     });
 
-    $("#cv").click(function(){
-        $("#include").load("/include/cv.html"); 
+    $("#cv").click(function () {
+        $("#include").fadeOut(1); 
+        $("#include").load("/include/cv.html").fadeIn(500);
     });
 
-    $("#resume").click(function(){
-        $("#include").load("/include/resume.html"); 
+    $("#resume").click(function () {
+       $("#include").fadeOut(1); $("#include").load("/include/resume.html").fadeIn(500);
     });
 
-    $("#seeingsound").click(function(){
-        $("#include").load("/include/seeingsound.html"); 
+    $("#seeingsound").click(function () {
+        $("#include").fadeOut(1); 
+        $("#include").load("/include/seeingsound.html").fadeIn(500);
     });
 
-    $("#oraclear").click(function(){
-        $("#include").load("/include/oraclear.html"); 
+    $("#oraclear").click(function () {
+        $("#include").fadeOut(1); 
+        $("#include").load("/include/oraclear.html").fadeIn(500);
     });
 
-    $('li > a').click(function() {
+    $('li > a').click(function () {
         $('li').removeClass();
         $(this).parent().addClass('is-active');
     });
+    
+});
 
-
+$(window).on('resize', function () {
+    location.reload();
 });
 

@@ -25,24 +25,12 @@
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
 
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
-    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+    <meta name="apple-mobile-web-app-title" content="Matthew Ganucheau - Design Portfolio">
 
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#3372DF">
-
-    <link rel="shortcut icon" href="images/favicon.png">
-
-    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
-    <link rel="canonical" href="http://www.example.com/">
-    -->
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -50,19 +38,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r69/three.min.js"></script>
     <link rel="stylesheet" href="/css/style.css">
+      
+      
+    <!-- Image Sider https://github.com/leemark/better-simple-slideshow -->
+    <link rel="stylesheet" href="css/simple-slideshow-styles.css">
 
-    <style>
-        #view-source {
-            position: fixed;
-            display: block;
-            right: 0;
-            bottom: 0;
-            margin-right: 40px;
-            margin-bottom: 40px;
-            z-index: 900;
-        }
-    </style>
-
+    <script src="js/hammer.min.js"></script> <!-- For swipe support on touch interfaces -->
+    <script src="js/better-simple-slideshow.min.js"></script>   
 </head>
 
 <body>
@@ -77,8 +59,8 @@
 
             <nav class="mdl-navigation ">
                 <li><a class="mdl-navigation__link" href="#" id="about">About</a></li>
-                <li><a class="mdl-navigation__link" href="#" id="resume">Resume</a></li>
-                <li><a class="mdl-navigation__link" href="#" id="cv">CV</a></li>
+<!--                <li><a class="mdl-navigation__link" href="#" id="resume">Resume</a></li>-->
+                <li><a class="mdl-navigation__link" href="#" id="cv">Artistic C.V.</a></li>
                 <li><a class="mdl-navigation__link" href="#" id="portfolio">Portfolio</a></li>
                 <ul>
                     <li><a class="mdl-navigation__link" href="#" id="clickclean">Click Clean</a></li>
@@ -93,24 +75,21 @@
         <main class="mdl-layout__content">
 
             <div class="mdl-grid content mdl-grid">
-                <!--          <div class="mdl-cell mdl-cell--1-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>-->
-                <!--        <div class="mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--12-col">-->
-
-                <div class="content mdl-color-text--grey-800 mdl-cell mdl-cell--12-col">
-                    <div class="demo-crumbs">
+                <div class="content mdl-color-text--grey-800 mdl-cell mdl-cell--10-col">
                         <div class="contentarea" id="include"></div>
-                    </div>
                 </div>
             </div>
         </main>
-
+        
         <div id="footer"></div>
-
-
+        
     </div>
-    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<!--    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>-->
+    <script src="/js/material.min.js"></script>
     <script src="/js/jquery.min.js"></script>
+<!--    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>-->
 
+    
     <script id="shader-vertex-terrain-perlin" type="x-shader/x-vertex">
         vec3 mod289(vec3 x){
           return x - floor(x * (1.0 / 289.0)) * 289.0;
@@ -558,7 +537,9 @@
             z = newPosition.z;
         }
         </script>
+    
     <script src="/js/waterfooter.js"></script>
     <script src="/js/index.js"></script>
+    
 </body>
 </html>
