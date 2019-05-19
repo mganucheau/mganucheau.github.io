@@ -40,6 +40,7 @@ body {
 #sketch {
   /* background-color: rgba(217, 217, 217, 0.658); */
   clip-path: circle(300px at center);
+  -webkit-clip-path: circle(300px at center);
   height: 600px;
   width: 600px;
 }

@@ -41,6 +41,7 @@ body {
   height: 600px;
   width: 600px;
   clip-path: circle(300px at center);
+  -webkit-clip-path: circle(300px at center);
 }
 
 

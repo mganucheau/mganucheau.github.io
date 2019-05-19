@@ -27,7 +27,4 @@ function draw() {
     timer = 1;
   }
 
-
-
-  
 }

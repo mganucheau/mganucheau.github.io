@@ -27,6 +27,7 @@ body {
 #sketch {
   padding: 25px;
   clip-path: circle(300px at center);
+  -webkit-clip-path: circle(300px at center);
   height: 600px;
   width: 600px;
 }
