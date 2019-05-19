@@ -18,7 +18,7 @@ function draw() {
     push();
     translate(width/2,height/2);
     rotate(map(sin(0.001*frameCount),-1, 1, 0, TWO_PI));
-    ellipse(0,0,800,random(1080));
+    ellipse(0,0,600,random(1080));
     pop();
   // }
 
