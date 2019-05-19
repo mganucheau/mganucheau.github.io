@@ -1,0 +1,36 @@
+body {
+  background: rgb(219, 219, 219);
+  text-align: center;
+  color: #333333;
+}
+
+#box1{
+  width: 700px;
+  height: 700px;
+  top: 25px;
+  margin: auto;
+  position: relative;
+  background: #355C7D;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #522e38, #54475f, #21394e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #522e38, #54475f, #21394e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#box2{
+  width: 650px;
+  height: 650px;
+  border: solid 2px rgba(245, 245, 245, 0.493);
+  position: relative;
+  margin: 0 auto;
+  top: 25px;
+}
+
+#sketch {
+  padding: 25px;
+  clip-path: circle(300px at center);
+  height: 600px;
+  width: 600px;
+}
+
+
+
+

@@ -1,0 +1,47 @@
+body {
+  background: rgb(219, 219, 219);
+  text-align: center;
+  color: #333333;
+}
+
+#box1{
+  width: 700px;
+  height: 700px;
+  top: 25px;
+  margin: auto;
+  position: relative;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
+  background: rgb(125,126,125); /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#box2{
+  width: 650px;
+  height: 650px;
+  border: solid 2px gray;
+  position: relative;
+  margin: 0 auto;
+  top: 25px;
+}
+
+#circle{
+  position: relative;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  margin: auto;
+  top:20px; 
+  /* border: 1px solid gray; */
+}
+
+#sketch {
+  height: 600px;
+  width: 600px;
+  clip-path: circle(300px at center);
+}
+
+
+

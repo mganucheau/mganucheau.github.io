@@ -1,0 +1,49 @@
+body {
+  background: rgb(219, 219, 219);
+  text-align: center;
+  color: #333333;
+}
+
+#box1{
+  width: 700px;
+  height: 700px;
+  top: 25px;
+  margin: auto;
+  position: relative;
+
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#9aa5b8+0,7b8fb1+100 */
+  background: rgb(154,165,184); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(154,165,184,1) 0%, rgba(123,143,177,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(154,165,184,1) 0%,rgba(123,143,177,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(154,165,184,1) 0%,rgba(123,143,177,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9aa5b8', endColorstr='#7b8fb1',GradientType=0 ); /* IE6-9 */
+}
+
+#box2{
+  width: 650px;
+  height: 650px;
+  border: solid 2px #c8cace;
+  position: relative;
+  margin: 0 auto;
+  top: 25px;
+}
+
+#circle{
+  position: relative;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  margin: auto;
+  top:10px; 
+}
+
+#sketch {
+  /* background-color: rgba(217, 217, 217, 0.658); */
+  clip-path: circle(300px at center);
+  height: 600px;
+  width: 600px;
+}
+
+#canvasGL{
+  
+}
