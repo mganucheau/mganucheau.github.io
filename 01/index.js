@@ -111,12 +111,12 @@
             }
 
             buildPlanes(segments) {
-                this.plane_geometry = new THREE.PlaneBufferGeometry(20, 20, segments, segments);
+                this.plane_geometry = new THREE.PlaneBufferGeometry(10, 10, segments, segments);
                 this.plane_material = new THREE.ShaderMaterial({
                     vertexShader: document.getElementById('shader-vertex-terrain-perlinsombrero').textContent,
                     fragmentShader: document.getElementById('shader-fragment-terrain').textContent,
                     wireframe: this.options.wireframe,
-                    wireframeLinewidth: 2,
+                    wireframeLinewidth: 1,
                     transparent: true,
                     uniforms: this.uniforms
                 });
@@ -138,12 +138,12 @@
         Terrain.prototype.clock = new THREE.Clock(true);
 
         Terrain.prototype.options = {
-            elevation: .5,
-            noise_range: .3,
+            elevation: .7,
+            noise_range: .25,
             sombrero_amplitude: -0.5,
-            sombrero_frequency: 4,
-            speed: -.15,
-            segments: 700,
+            sombrero_frequency: 2,
+            speed: -.13,
+            segments: 450,
             wireframe_color: '#38558b',
             perlin_passes: 4,
             floor_visible: true,

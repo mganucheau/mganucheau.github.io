@@ -2,6 +2,7 @@ body {
   background: rgb(219, 219, 219);
   text-align: center;
   color: #333333;
+
 }
 
 #box1{
@@ -26,10 +27,12 @@ body {
 
 #sketch {
   padding: 25px;
-  clip-path: circle(300px at center);
-  -webkit-clip-path: circle(300px at center);
+  clip-path: circle(600px at center);
+  -webkit-clip-path: circle(600px at center);
   height: 600px;
   width: 600px;
+  opacity: 1;
+
 }
 
 

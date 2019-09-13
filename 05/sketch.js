@@ -5,7 +5,9 @@ function setup() {
   var canvas = createCanvas(600, 600);
   canvas.parent('sketch');
   background(255,20);
-  stroke(225, 10);
+  stroke(#ffffff);
+  strokeWeight(3);
+
   noFill();
 }
 
