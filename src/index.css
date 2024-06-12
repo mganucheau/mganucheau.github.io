@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+body {
+  @apply font-inter;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Jost", sans-serif;
+  color: #000;
+}
+
+.react-pdf__Page__textContent,
+.react-pdf__Page__annotations {
+  display: hidden;
+  visibility: hidden;
+}
+
+#pdf-page-info {
+  display: none;
+}
+
+#pdf-controls {
+  box-shadow: none;
+  margin: 0 8rem 0 0;
+  padding: 0;
+}
+
+.react-pdf__Page__canvas {
+  margin: 0 auto;
+  padding: 0;
+}
