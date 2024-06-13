@@ -41,13 +41,13 @@ To run this project locally, follow these steps:
    git clone https://github.com/your-username/portfolio-website.git
    cd portfolio-website
    ```
-````
 
 2. **Install dependencies:**
 
    ```bash
    npm install
    ```
+
 
 3. **Create an `.env` file in the root directory and add your EmailJS user ID, service ID, and template ID:**
 
