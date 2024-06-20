@@ -81,9 +81,10 @@ export const creativeProjects = [
 ];
 export const Blurb = [
     {
-        description: "I'm a PMP-certified UX Designer with over 15 years of experience blending technology, design, and education. I've had the pleasure of working on global certification platforms at Stripe and spicing up e-learning modules for healthcare startups. I love bringing creativity and analytical rigor to every project. Transitioning from non-profits and teaching art at higher education institutes to the tech industry has given me diverse skills and a passion for problem-solving. In my free time, I enjoy creating art and music using emerging technologies.",
+        description: "A PMP-certified professional, I excel in managing projects that integrate cutting-edge technology and impactful design. With a background that spans non-profits, academia, and the tech sector, I bring a unique blend of problem-solving skills and innovative thinking to my roles. Beyond work, I am passionate about using emerging technologies to craft art and music that are not only creative but also inspiring and thought-provoking.",
     },
 ];
+
 
 export const certData = [
     {

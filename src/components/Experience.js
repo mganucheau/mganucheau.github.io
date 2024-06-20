@@ -4,7 +4,7 @@ import { certData, workData, educationData } from './Data';
 
 const Experience = () => (
     <section id="experience" className="pt-24 lg:pt-8 text-neutral">
-        <div className="container px-5 mx-auto md:px-10 lg:px-0">
+        <div className="container px-5 mx-auto md:px-10 lg:px-0 opacity-85">
             <div className="grid grid-cols-1 space-y-16 lg:grid-cols-8 lg:space-y-0">
                 <div className="w-full col-span-1 pt-6 text-center md:col-span-3 lg:col-span-2 lg:text-start">
                     <h2 className="h-6 text-2xl ">Expereince</h2>

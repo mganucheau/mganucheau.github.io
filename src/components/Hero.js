@@ -11,7 +11,7 @@ const Hero = () => {
           <div className="space-y-4 text-neutral ">
             <h1 class="leading-tight  text-3xl">Hi, I'm</h1>
             <h1 className="text-6xl leading-tight sm:text-5xl md:text-7xl">Matthew<br />Ganucheau</h1>
-            <p class="text-2xl md:pe-36 lg:pe-0">I'm a creative designer with a passion for connecting data informed design with creative vision to build innovative expereinces.</p>
+            <p class="text-2xl md:pe-36 lg:pe-0">I lead initiatives  projects that meld inspiration with innovation, crafting transformative and engaging experiences.</p>
           </div>
           <div className="grid grid-cols-2 gap-4 md:gap-6 w-fit">
             <div>

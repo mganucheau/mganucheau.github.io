@@ -39,13 +39,12 @@ const Skills = () => (
                     {services.map((service, index) => {
                         const Icon = service.icon;
                         return (
-                            <div key={index} className="flex flex-col p-6 rounded-btn bg-base-100">
+                            <div key={index} className="flex flex-col p-6 rounded-btn bg-base-100 opacity-85">
                                 <div className="flex flex-row gap-4 ">
                                     <Icon className="w-8 h-8 my-auto" ></Icon>
                                     <h3 className="w-full my-auto leading-tight text-md text-neutral">{service.title}</h3>
                                 </div>
-                                <div className="mx-auto divider divider-neutral lg:mx-0"></div>
-
+                                <div className="opacity-85 divider divider-neutral "></div>
                                 <p className="text-sm text-neutral">{service.description}</p>
                             </div>
                         );
