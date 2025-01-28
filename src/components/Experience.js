@@ -7,7 +7,7 @@ const Experience = () => (
         <div className="container px-5 mx-auto md:px-10 lg:px-0 opacity-85">
             <div className="grid grid-cols-1 space-y-16 lg:grid-cols-8 lg:space-y-0">
                 <div className="w-full col-span-1 pt-6 text-center md:col-span-3 lg:col-span-2 lg:text-start">
-                    <h2 className="h-6 text-2xl ">Expereince</h2>
+                    <h2 className="h-6 text-2xl ">Experience</h2>
                     <div className="w-20 h-0 mx-auto lg:w-10 divider divider-neutral lg:mx-0"></div>
                 </div>
                 <div className="grid grid-cols-1 col-span-5 gap-6 md:grid-cols-2 lg:grid-cols-3 lg:col-span-6">
