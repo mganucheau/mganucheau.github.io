@@ -81,7 +81,7 @@ export const creativeProjects = [
 ];
 export const Blurb = [
     {
-        description: "A PMP-certified professional, I excel in managing projects that integrate cutting-edge technology and impactful design. With a background that spans non-profits, academia, and the tech sector, I bring a unique blend of problem-solving skills and innovative thinking to my roles. Beyond work, I am passionate about using emerging technologies to craft art and music that are not only creative but also inspiring and thought-provoking.",
+        description: "Part creative lead, part systems thinker—I manage cross-functional teams to bring ambitious ideas to life. With a decade of experience in learning, tech, and art, I turn vision into momentum.",
     },
 ];
 
