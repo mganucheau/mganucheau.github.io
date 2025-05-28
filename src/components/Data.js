@@ -90,10 +90,13 @@ export const certData = [
     {
         title: 'Project Management (PMP)',
         imageUrl: './images/badge-pmp.png',
-
     },
     {
-        title: 'Google UX Design ',
+        title: 'Six Sigma Green Belt',
+        imageUrl: './images/badge-sixsigma.png',
+    },
+    {
+        title: 'Google UX Design',
         imageUrl: './images/badge-ux.png',
     },
     {
